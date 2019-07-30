@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>BINGO-75 (PROJECT 2)</title>
+		<script type="text/javascript" src="../JavaScript/jquery-3.2.1.js"></script>
+		<script src="../JavaScript/Grid.js"></script>
+		<link rel="stylesheet" href="../CSS/Grid.css">
+	</head>
+	<body>
+		<div>
+			<div class="workArea">
+				<h1>_BINGO-75_</h1>
+				<p id="p1">developed by Zhang Naichuan</p>
+				<button type="button" class="b1" onclick="playGame()">Play</button>
+				<button type="button" class="b1" onclick="quitGame()">Quit</button>
+			</div>
+			<div id="rules"></div>
+			<div id="grid" hidden>
+				<table class="panel">
+					<tr>
+						<td id="0">&nbsp;</td>
+						<td id="15">&nbsp;</td>
+						<td id="30">&nbsp;</td>
+						<td id="45">&nbsp;</td>
+						<td id="60">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="1">&nbsp;</td>
+						<td id="16">&nbsp;</td>
+						<td id="31">&nbsp;</td>
+						<td id="46">&nbsp;</td>
+						<td id="61">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="2">&nbsp;</td>
+						<td id="17">&nbsp;</td>
+						<td id="32">Free</td>
+						<td id="47">&nbsp;</td>
+						<td id="62">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="3">&nbsp;</td>
+						<td id="18">&nbsp;</td>
+						<td id="33">&nbsp;</td>
+						<td id="48">&nbsp;</td>
+						<td id="63">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="4">&nbsp;</td>
+						<td id="19">&nbsp;</td>
+						<td id="34">&nbsp;</td>
+						<td id="49">&nbsp;</td>
+						<td id="64">&nbsp;</td>  
+					</tr>
+				</table>
+				<br/>
+				<table class="panel">
+					<tr>
+						<td id="5">&nbsp;</td>
+						<td id="20">&nbsp;</td>
+						<td id="35">&nbsp;</td>
+						<td id="50">&nbsp;</td>
+						<td id="65">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="6">&nbsp;</td>
+						<td id="21">&nbsp;</td>
+						<td id="36">&nbsp;</td>
+						<td id="51">&nbsp;</td>
+						<td id="66">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="7">&nbsp;</td>
+						<td id="22">&nbsp;</td>
+						<td id="37">Free</td>
+						<td id="52">&nbsp;</td>
+						<td id="67">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="8">&nbsp;</td>
+						<td id="23">&nbsp;</td>
+						<td id="38">&nbsp;</td>
+						<td id="53">&nbsp;</td>
+						<td id="68">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="9">&nbsp;</td>
+						<td id="24">&nbsp;</td>
+						<td id="39">&nbsp;</td>
+						<td id="54">&nbsp;</td>
+						<td id="69">&nbsp;</td>  
+					</tr>
+				</table>
+				<br/>
+				<table class="panel">
+					<tr>
+						<td id="10">&nbsp;</td>
+						<td id="25">&nbsp;</td>
+						<td id="40">&nbsp;</td>
+						<td id="55">&nbsp;</td>
+						<td id="70">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="11">&nbsp;</td>
+						<td id="26">&nbsp;</td>
+						<td id="41">&nbsp;</td>
+						<td id="56">&nbsp;</td>
+						<td id="71">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="12">&nbsp;</td>
+						<td id="27">&nbsp;</td>
+						<td id="42">Free</td>
+						<td id="57">&nbsp;</td>
+						<td id="72">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="13">&nbsp;</td>
+						<td id="28">&nbsp;</td>
+						<td id="43">&nbsp;</td>
+						<td id="58">&nbsp;</td>
+						<td id="73">&nbsp;</td>  
+					</tr>
+					<tr>
+						<td id="14">&nbsp;</td>
+						<td id="29">&nbsp;</td>
+						<td id="44">&nbsp;</td>
+						<td id="59">&nbsp;</td>
+						<td id="74">&nbsp;</td>  
+					</tr>
+				</table>
+			</div>
+			<div>
+				<table id="numbers" hidden>
+					<th id="showNumbers">&nbsp;</th>
+				</table>
+			</div>
+			<p id="money" hidden></p>
+			<div id="pos" hidden>
+				<button type="button" id="b2" onclick="checkLine()">Line</button>
+				<button type="button" id="b3" onclick="checkPanel()">Panel</button>
+				<button type="button" id="b4" onclick="quitGame2()">Quit</button>
+			</div>
+			<p id="warning" hidden></p>
+			<p id="finalResult"></p>
+			<div id="quit" hidden>
+				You are out of the game.<br/>
+				Welcome to come back again!
+			</div>
+			<div id="loose" hidden>
+				Sorry, you have lost all the money.</br>
+				You lost!
+			</div>
+			<button type="button" id="comeBack" onclick="location.href='Grid.html'" hidden>Back</button>
+		</div>
+	</body>
+</html>
